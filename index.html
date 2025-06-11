@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">PortFolio</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" id="searchInput" placeholder="Type To text">
+                <button class="btn" onclick="searchFunction()">Search</button>
+            </div>
+        </div> 
+
+        <div class="content">
+            <h1>Web Design & <br><span>Development</span> <br>Course</h1>
+            <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque 
+                expedita atque eveniet <br> quis nesciunt. Quos nulla vero consequuntur, fugit nemo ad delectus 
+                <br> a quae totam ipsa illum minus laudantium?</p>
+
+            <button class="cn"><a href="#">JOIN US</a></button>
+
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="email" id="email" placeholder="Enter Email Here">
+                <input type="password" id="password" placeholder="Enter Password Here">
+                <button class="btnn" onclick="login()">Login</button>
+
+                <p class="link">Don't have an account<br>
+                <a href="#" onclick="signup()">Sign up </a> here</p>
+                <p class="liw">Log in with</p>
+
+                <div class="icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Footer -->
+    <footer style="text-align: center; padding: 20px; background-color: #222; color: #fff;">
+        &copy; 2025 Manish. All rights reserved.
+    </footer>
+
+    <!-- Ionicons CDN -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <!-- JavaScript -->
+    <!-- <script>
+        function searchFunction() {
+            const query = document.getElementById('searchInput').value;
+            if (query.trim() === '') {
+                alert("Please enter a search term.");
+            } else {
+                alert("Searching for: " + query);
+            }
+        }
+
+        function login() {
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (email === '' || password === '') {
+                alert("Please fill in both email and password.");
+            } else {
+                // This is where you would normally validate with a server
+                alert("Login successful!\nEmail: " + email);
+            }
+        }
+
+        function signup() {
+            alert("Redirecting to signup page...");
+            // window.location.href = 'signup.html'; // Uncomment when you have a signup page
+        }
+    </script> -->
+<script src="script.js"></script>
+</body>
+</html>

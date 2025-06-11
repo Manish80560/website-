@@ -1,0 +1,1 @@
+alert("Welcome to Manish's Website..Thank's For Visiting..");
